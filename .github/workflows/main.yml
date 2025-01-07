@@ -12,11 +12,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Add remote 
-        env:
-          HF: ${{ secrets.HF_TOKEN }}
-        run: git remote add space https://hamzasafwan:$HF@huggingface.co/spaces/hamzasafwan/textSummarization
       - name: Push to hub
         env:
-          HF: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://hamzasafwan:$HF@huggingface.co/spaces/hamzasafwan/textSummarization main
+          HF: ${{ secrets.HF }}
+        run: git push --force https://hamzasafwan:$HF@huggingface.co/spaces/Amrrs/image-to-text-app main
