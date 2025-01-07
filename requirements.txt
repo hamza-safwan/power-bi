@@ -1,0 +1,4 @@
+gradio==5.9.1
+transformers==4.47.1
+tensorflow==2.18.0
+tf-keras==2.18.0
